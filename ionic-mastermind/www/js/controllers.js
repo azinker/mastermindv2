@@ -9,16 +9,32 @@ angular.module('starter.controllers', [])
   // TODO: Needs to be set when buttons in menu.html are clicked.
   $scope.selectedIcon = 0;
 
+
+// Randomized randomArray
+  $scope.numPositions = 4;
+  $scope.numIcons = 4;
+
+  function randomizeCode() {
+    var randomArray = [];
+    for (var i = 0; i < $scope.numPositions; i++) {
+      randomArray.push(Math.floor(Math.random() * $scope.numIcons));
+    }
+    return randomArray;
+  };
+
+
+
   // Initialize game state
   $scope.newGame = function() {
+    randomizeCode();
+    console.log(randomizeCode());
     // TODO: Set all data properties/structures to their beginning state
-
   };
 
   // Run newGame() upon loading
   $scope.newGame();
 
-  /* 
+  /*
   TODO: Call this function when the user clicks a 'score' button.
         The 'score' button should remain disabled until all positions have a value.
         Maybe a button with an icon of a checkmark would be a good UI choice? Or,

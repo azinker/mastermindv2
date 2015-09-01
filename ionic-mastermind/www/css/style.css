@@ -1,7 +1,7 @@
 /* our custom css */
 
 .left-border {
-  border-left: 1px solid #b2b2b2;
+  border-left: 1px solid #daa520;
 }
 
 .turn {
@@ -20,7 +20,7 @@
 }
 
 .select-icons .button.selected-icon {
-  color: #28a54c;
+  color: #daa520;
 }
 
 .perfect {
@@ -29,7 +29,7 @@
   width: 12px;
   height: 12px;
   border: 2px solid #28a54c;
-  background-color: #33cd5f;
+  background-color: #daa520;
   border-radius: 50%;
 }
 
